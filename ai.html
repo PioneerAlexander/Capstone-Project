@@ -21,20 +21,33 @@
       <h2>AI-Assisted CV & Motivation Letter Editing</h2>
       <p>Leverage advanced AI tools to tailor your CV and motivation letters according to different job positions and companies.</p>
       <div class="ai-tools">
+
         <div class="ai-tool">
           <h3>Edit Your CV</h3>
-          <label for="cv-input">Your CV:</label><br>
+          <p>Use our AI-powered tool to automatically adjust your CV format, highlight key experiences, and match job requirements. You can either paste your CV or upload it directly as a PDF or TeX file.</p>
+          <label for="cv-input">Paste or Edit Your CV:</label><br>
           <textarea id="cv-input" placeholder="Paste your CV here"></textarea><br>
+          <div class="file-upload">
+            <label for="cv-upload"><strong>Upload a CV File (PDF or TeX):</strong></label><br>
+            <input type="file" id="cv-upload" accept=".pdf,.tex" onclick="alert('File upload functionality coming soon')">
+          </div>
           <button class="btn" onclick="alert('This will edit the CV using AI in a future version')">Edit CV using AI</button>
-          <p class="ai-instructions">Use this tool to automatically adjust your CV format, highlight key experiences, and match job requirements.</p>
+          <p class="ai-instructions">After uploading or pasting your CV, our AI will analyze the content and format to optimize it for the positions you're interested in.</p>
         </div>
+
         <div class="ai-tool">
           <h3>Write Your Motivation Letter</h3>
-          <label for="motivation-letter">Your Motivation Letter:</label><br>
+          <p>Provide the company and position details, and let our AI craft a personalized motivation letter for you. You can paste your letter content or upload it as a PDF or TeX file.</p>
+          <label for="motivation-letter">Paste or Edit Your Motivation Letter:</label><br>
           <textarea id="motivation-letter" placeholder="Write your letter here"></textarea><br>
+          <div class="file-upload">
+            <label for="letter-upload"><strong>Upload a Letter File (PDF or TeX):</strong></label><br>
+            <input type="file" id="letter-upload" accept=".pdf,.tex" onclick="alert('File upload functionality coming soon')">
+          </div>
           <button class="btn" onclick="alert('This will generate a motivation letter using AI in a future version')">Generate Motivation Letter using AI</button>
-          <p class="ai-instructions">Provide the company and position details, and let our AI craft a personalized motivation letter for you.</p>
+          <p class="ai-instructions">Our AI will process the uploaded or pasted letter to generate a refined and personalized letter suited to the company's culture and job requirements.</p>
         </div>
+
       </div>
     </section>
   </main>

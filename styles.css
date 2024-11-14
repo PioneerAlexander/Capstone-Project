@@ -45,13 +45,13 @@ body {
   
   .welcome-section, .track-section, .jobs-section, .ai-features-section {
     margin-bottom: 2em;
+    background: #fff;
+    padding: 2em;
+    border-radius: 5px;
   }
   
   .welcome-section {
     text-align: center;
-    background: #fff;
-    padding: 2em 0;
-    border-radius: 5px;
   }
   
   .features {
@@ -96,9 +96,6 @@ body {
   .jobs-section, .track-section, .ai-features-section {
     max-width: 600px;
     margin: 0 auto;
-    background: #fff;
-    padding: 2em;
-    border-radius: 5px;
   }
   
   .job-filter {
@@ -224,6 +221,18 @@ body {
   .ai-tool .ai-instructions {
     margin-top: 1em;
     color: #555;
+  }
+  
+  .file-upload {
+    margin: 1em 0;
+  }
+  
+  .gmail-sync-section {
+    margin-bottom: 2em;
+  }
+  
+  .gmail-sync-btn {
+    background-color: #d93025; /* color resembling Gmail red */
   }
   
   .disabled, .disabled button, .disabled textarea {
