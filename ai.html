@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Features - Job Application Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Job Application Tracker</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="jobs.html">Open Positions</a></li>
+      <li><a href="track.html">Track Offer</a></li>
+      <li><a href="ai.html" class="active">AI Features</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="ai-features-section">
+      <h2>AI-Driven Features</h2>
+      <p>Use AI to edit your CV and write personalized motivation letters for each company.</p>
+      <p><strong>Note:</strong> This is a prototype. AI functionalities are not implemented yet.</p>
+      <div class="ai-tools">
+        <div class="ai-tool">
+          <label for="cv-input">Your CV:</label><br>
+          <textarea id="cv-input" placeholder="Paste your CV here" disabled></textarea><br>
+          <button class="disabled">Edit CV using AI</button>
+        </div>
+        <div class="ai-tool">
+          <label for="motivation-letter">Your Motivation Letter:</label><br>
+          <textarea id="motivation-letter" placeholder="Paste your letter here" disabled></textarea><br>
+          <button class="disabled">Generate Motivation Letter using AI</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
