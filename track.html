@@ -18,15 +18,70 @@
   </nav>
   <main>
     <section class="track-section">
-      <h2>Track Your Offers</h2>
-      <p>Track your job application statuses, emails, and scheduled meetings all in one place.</p>
-      <p><strong>Note:</strong> This is a prototype. Tracking functionalities are not implemented yet.</p>
-      <div class="tracking-dashboard disabled">
-        <h3>Current Applications</h3>
-        <ul>
-          <li>Application to Company A - Stage: Interview Scheduled</li>
-          <li>Application to Company B - Stage: Resume Sent</li>
-        </ul>
+      <h2>Track Your Job Applications</h2>
+      <p>Keep an organized record of all your ongoing job applications, scheduled interviews, and received offers. Stay on top of your job search progress with ease.</p>
+      <div class="tracking-dashboard">
+        <h3>Your Applications Dashboard</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Position</th>
+              <th>Status</th>
+              <th>Last Updated</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Company A</td>
+              <td>Software Engineer</td>
+              <td>Interview Scheduled</td>
+              <td>2023-10-15</td>
+              <td>
+                <button class="btn" onclick="alert('View details of application at Company A')">View</button>
+                <button class="btn" disabled>Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Company B</td>
+              <td>Front-End Developer</td>
+              <td>Resume Sent</td>
+              <td>2023-10-20</td>
+              <td>
+                <button class="btn" onclick="alert('View details of application at Company B')">View</button>
+                <button class="btn" disabled>Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Company C</td>
+              <td>Data Analyst</td>
+              <td>Offer Received</td>
+              <td>2023-11-01</td>
+              <td>
+                <button class="btn" onclick="alert('View details of application at Company C')">View</button>
+                <button class="btn" disabled>Edit</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="add-application">
+          <h3>Add a New Application</h3>
+          <form>
+            <label for="company-name">Company Name:</label><br>
+            <input type="text" id="company-name" disabled><br><br>
+            <label for="position">Position Applied:</label><br>
+            <input type="text" id="position" disabled><br><br>
+            <label for="status">Application Status:</label><br>
+            <select id="status" disabled>
+              <option value="resume_sent">Resume Sent</option>
+              <option value="interview_scheduled">Interview Scheduled</option>
+              <option value="offer_received">Offer Received</option>
+              <option value="rejected">Rejected</option>
+            </select><br><br>
+            <button class="btn" disabled>Add Application</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>

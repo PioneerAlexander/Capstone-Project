@@ -18,21 +18,41 @@
   </nav>
   <main>
     <section class="jobs-section">
-      <h2>Open Positions Updates</h2>
-      <p>You will receive updates about open positions that match your interests.</p>
-      <p><strong>Note:</strong> This is a prototype. Updates functionality is not implemented yet.</p>
+      <h2>Open Positions Matching Your Interests</h2>
+      <p>Explore a curated list of job openings that match your career goals and interests. Use the filter and sort options to refine your search.</p>
+      <div class="job-filter">
+        <label for="filter-keyword">Filter by keyword:</label>
+        <input type="text" id="filter-keyword" placeholder="e.g. 'Software Engineer'" disabled>
+        <button class="btn" disabled>Apply Filter</button>
+        <label for="sort-options">Sort by:</label>
+        <select id="sort-options" disabled>
+          <option value="relevance">Relevance</option>
+          <option value="date">Date Posted</option>
+          <option value="company">Company Name</option>
+        </select>
+        <button class="btn" disabled>Sort</button>
+      </div>
       <div class="job-offers">
-        <div class="job-card disabled">
+        <div class="job-card">
           <h3>Software Engineer at Company A</h3>
-          <p>Position: Full-time</p>
-          <p>Location: Remote</p>
-          <p class="unavailable">View Details (Not Clickable in Prototype)</p>
+          <p><strong>Type:</strong> Full-time</p>
+          <p><strong>Location:</strong> Remote</p>
+          <button class="btn" onclick="alert('Details about Software Engineer at Company A')">View Details</button>
+          <button class="btn" disabled>Apply Now</button>
         </div>
-        <div class="job-card disabled">
+        <div class="job-card">
           <h3>Front-End Developer at Company B</h3>
-          <p>Position: Full-time</p>
-          <p>Location: On-site</p>
-          <p class="unavailable">View Details (Not Clickable in Prototype)</p>
+          <p><strong>Type:</strong> Full-time</p>
+          <p><strong>Location:</strong> On-site</p>
+          <button class="btn" onclick="alert('Details about Front-End Developer at Company B')">View Details</button>
+          <button class="btn" disabled>Apply Now</button>
+        </div>
+        <div class="job-card">
+          <h3>Data Analyst at Company C</h3>
+          <p><strong>Type:</strong> Part-time</p>
+          <p><strong>Location:</strong> On-site</p>
+          <button class="btn" onclick="alert('Details about Data Analyst at Company C')">View Details</button>
+          <button class="btn" disabled>Apply Now</button>
         </div>
       </div>
     </section>
